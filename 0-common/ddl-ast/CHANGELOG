@@ -1,0 +1,30 @@
+Version 0.3.1 (2016-05-xx)
+--------------------------
+Fixed incorrect type suggestion for integer with null (#50)
+Added handling an object with no properties or patternProperties specified as VARCHAR (#56)
+Added handling of anything-* schemas as tables without custom columns (#43)
+
+Version 0.3.0 (2016-02-08)
+--------------------------
+Removed OpenJDK from .travis.yml (#48)
+Added Java interop (#45)
+Added recognition of multipleOf == 1 as integer (#42)
+Fixed nullable string with minLength == maxLength resulted to VARCHAR (#40)
+Fixed recognition of Decimal with multipleOf (#41)
+
+Version 0.2.0 (2015-09-14)
+--------------------------
+Added Scala 2.11 support (#28)
+Added compression encodings (#29)
+Default varchar size changed to 4096 (#30)
+Added initial test suite (#31)
+Now handling an object without a "properties" field if "patternProperties" defined  (#32)
+Now handling an object without a "properties" field if "additionalProperties" set to "false" (#33)
+Fixed handling enums containing different types (#34)
+Fixed ignoring maxLength for a type enum (#35)
+Now handling nested non-required properties (#36)
+Added COMMENT ON in Redshift DDL (#38)
+
+Version 0.1.0 (2015-07-29)
+--------------------------
+Initial release
